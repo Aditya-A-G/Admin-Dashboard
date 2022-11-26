@@ -13,7 +13,14 @@
     <div class="sidebar">
         <div class="container">
 
-            <a href="" class="logo">Dashboard</a>
+            <a href="" class="dashboard">
+                <div class="dashboard_inner">
+                    <svg>
+                        <use href="./icons/dashboard.svg#dashboard"></use>
+                    </svg>
+                    <span>Dashboard</span>
+                </div>
+            </a>
 
             <ul class="nav">
                 <li>
@@ -98,29 +105,53 @@
 
     </div>
 
-    <!-- <header class="header">
+    <header class="header">
 
-        <div class="header__container">
-            <div class="leftContainer">
+        <div class="header__top">
+
+            <div class="search">
+                <svg>
+                    <use href="./icons/search.svg#search"></use>
+                </svg>
                 <input type="text">
-                <img src="" alt="Home">
             </div>
 
-            <div class="rightContainer">
-                <img src="" alt="">
-                <p><img src="" alt="">James Bond</p>
+            <div class="profile">
+                <svg>
+                    <use href="./icons/notification.svg#notification"></use>
+                </svg>
+               <img src="./logo.png" alt="logo" class="logo">
+                <p>Morgan Oakley</p>
             </div>
 
         </div>
 
-        <div class="intro">
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nemo?</p>
-            <h2>James Bond</h2>
+
+        <div class="header_bottom">
+
+            <div class="intro">
+                <img src="./logo.png" alt="logo">
+                <div class="name">
+                    <p>Hi there,</p>
+                    <h3>Morgan Oakley (@morgan)</h3>
+                </div>
+            </div>
+            
+            <div class="call-to-action">
+                <!-- <button> -->
+                    <a href="">New</a>
+                <!-- </button> -->
+                <!-- <button> -->
+                    <a href="">Upload</a>
+                <!-- </button> -->
+                <!-- <button> -->
+                    <a href="">Share</a>
+                <!-- </button> -->
+            </div>
         </div>
     </header>
 
-    <main>
+    <!-- <main>
         <div class="projects">
 
             <div class="card">

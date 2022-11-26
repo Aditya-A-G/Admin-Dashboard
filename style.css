@@ -16,8 +16,9 @@ html{
 body{
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
   display: grid;
-  grid-template-columns: 2fr 8fr;
+  grid-template-columns: 2fr 10fr;
   grid-template-rows: 150px auto;
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
@@ -29,6 +30,7 @@ body > *{
 }
 
 svg{
+  fill: whitesmoke;
   height: 24px;
   width: 24px;
 }
@@ -54,11 +56,18 @@ a{
   list-style-type: none;
 }
 
-.logo{
+.dashboard{
   font-size: 2.6rem;
   font-weight:bolder;
   color: whitesmoke;
 }
+
+.dashboard_inner{
+  display: flex;
+  align-items: center;
+  column-gap: .4em;
+}
+
 
 .nav{
   display: grid;  
@@ -79,10 +88,101 @@ a{
   font-weight: bolder;
 }
 
-.nav li a svg{
-  fill: whitesmoke;
-}
 
 .nav:nth-child(3){
   padding-top: 2em;
+}
+
+.header{
+  color: black;
+  display: grid;
+}
+
+
+.header svg{
+  fill: black;
+}
+
+
+.header__top{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+
+.search{
+  display: grid;
+  grid-template-columns: min-content auto;
+  align-items: center;
+  column-gap: 1em;
+  padding: 1em;
+}
+
+.search input{
+  height: 100%;
+  border: none;
+  background-color: lightgray;
+  border-radius: 1.6em;
+  padding-left: .6em;
+  outline: none;
+  font-size: 1.6rem;
+}
+
+.profile{
+display: flex;
+justify-content: center;
+align-items: center;
+column-gap: 1.6em;
+}
+
+.profile p{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.profile img{
+  width: 8%;
+  object-fit: cover;
+}
+
+.header_bottom{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.intro{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 1em;
+  padding: 0 0 .8em 2em;
+}
+
+.intro img{
+  width: 8%;
+}
+
+.intro p{
+  font-size: 1.6rem;
+}
+
+.call-to-action{
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  column-gap: 1.6em;  
+}
+
+.call-to-action a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1992d4;
+  border-radius: 1.6em;
+  height: 35px;
+  width: 90px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
