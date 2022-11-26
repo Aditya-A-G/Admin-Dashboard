@@ -152,11 +152,12 @@ column-gap: 1.6em;
 }
 
 .intro{
+  grid-row: 1/2;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   column-gap: 1em;
-  padding: 0 0 .8em 2em;
+  padding: 0 0 0 2em;
 }
 
 .intro img{
@@ -168,11 +169,15 @@ column-gap: 1.6em;
 }
 
 .call-to-action{
+  height: 100%;
+  grid-row: 1/2;
   display: flex;
   justify-content: center;
   padding: 1em;
   column-gap: 1.6em;  
 }
+
+
 
 .call-to-action a{
   display: flex;
@@ -180,8 +185,8 @@ column-gap: 1.6em;
   align-items: center;
   background-color: #1992d4;
   border-radius: 1.6em;
-  height: 35px;
-  width: 90px;
+  height: 64%;
+  width: 48%;
   color: white;
   font-size: 1.6rem;
   font-weight: bold;
