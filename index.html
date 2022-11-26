@@ -1,104 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Admin Dashboard</title>
 </head>
+
 <body>
     <div class="sidebar">
+        <div class="container">
 
-        <a href="">Dashboard</a>
+            <a href="" class="logo">Dashboard</a>
 
-        <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Message</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-        </ul>
+            <ul class="nav">
+                <li>
+                    <a href="">
+                        <svg>
+                            <use href="./icons/home.svg#home"></use>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg>
+                            <use href="./icons/profile.svg#profile"></use>
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg>
+                            <use href="./icons/msg.svg#msg"></use>
+                        </svg>
+                        <span>Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg>
+                            <use href="./icons/history.svg#history"></use>
+                        </svg>
+                        <span>History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg>
+                            <use href="./icons/task.svg#task"></use>
+                        </svg>
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg>
+                            <use href="./icons/community.svg#community"></use>
+                        </svg>
+                        <span>Communities</span>
+                    </a>
+                </li>
+            </ul>
 
-        <ul>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
-        </ul>
+            <ul class="nav">
+                <li>
+                    <a href="">
+                        <svg>
+                            <use href="./icons/setting.svg#setting"></use>
+                        </svg>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg>
+                            <use href="./icons/support.svg#support"></use>
+                        </svg>
+                        <span>Support</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg>
+                            <use href="./icons/privacy.svg#privacy"></use>
+                        </svg>
+                        <span>Privacy</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
 
     </div>
 
-    <header>
-        <input type="text">
-        <img src="" alt="">
-        <img src="" alt="">
-        <p><img src="" alt="">James Bond</p>
+    <!-- <header class="header">
+
+        <div class="header__container">
+            <div class="leftContainer">
+                <input type="text">
+                <img src="" alt="Home">
+            </div>
+
+            <div class="rightContainer">
+                <img src="" alt="">
+                <p><img src="" alt="">James Bond</p>
+            </div>
+
+        </div>
 
         <div class="intro">
             <img src="" alt="">
-            <p></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nemo?</p>
             <h2>James Bond</h2>
         </div>
     </header>
 
-    <div class="projects">
+    <main>
+        <div class="projects">
 
-        <div class="card">
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet culpa molestiae adipisci quod repellendus!</p>
-            <div class="actions">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="card">
+                <h4>Lorem, ipsum dolor.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet culpa molestiae adipisci
+                    quod repellendus!</p>
+                <div class="actions">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet culpa molestiae adipisci quod repellendus!</p>
-            <div class="actions">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="card">
+                <h4>Lorem, ipsum dolor.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet culpa molestiae adipisci
+                    quod repellendus!</p>
+                <div class="actions">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet culpa molestiae adipisci quod repellendus!</p>
-            <div class="actions">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="card">
+                <h4>Lorem, ipsum dolor.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet culpa molestiae adipisci
+                    quod repellendus!</p>
+                <div class="actions">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet culpa molestiae adipisci quod repellendus!</p>
-            <div class="actions">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="card">
+                <h4>Lorem, ipsum dolor.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet culpa molestiae adipisci
+                    quod repellendus!</p>
+                <div class="actions">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet culpa molestiae adipisci quod repellendus!</p>
-            <div class="actions">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="card">
+                <h4>Lorem, ipsum dolor.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet culpa molestiae adipisci
+                    quod repellendus!</p>
+                <div class="actions">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet culpa molestiae adipisci quod repellendus!</p>
-            <div class="actions">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="card">
+                <h4>Lorem, ipsum dolor.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet culpa molestiae adipisci
+                    quod repellendus!</p>
+                <div class="actions">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
             </div>
+
         </div>
-        
-    </div>
+    </main>
 
     <div class="announcement">
         <div class="announcement">
@@ -138,9 +225,10 @@
             <h4></h4>
             <p></p>
         </div>
-        
-    </div>
+
+    </div> -->
 
 
 </body>
+
 </html>
