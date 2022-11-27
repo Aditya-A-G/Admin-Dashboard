@@ -18,7 +18,7 @@ body{
   width: 100vw;
   overflow-x: hidden;
   display: grid;
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 2fr 9fr;
   grid-template-rows: 150px auto;
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
@@ -121,7 +121,7 @@ a{
 .search input{
   height: 100%;
   border: none;
-  background-color: lightgray;
+  background-color: #e2e8f0;
   border-radius: 1.6em;
   padding-left: .6em;
   outline: none;
@@ -190,4 +190,68 @@ column-gap: 1.6em;
   color: white;
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+
+
+/* Use purple color for left side card border color */
+
+
+main{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: #e2e8f0;
+  padding-top: 1.6em;
+  padding-bottom: 5em;
+}
+
+main .projects{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 357px);
+  grid-template-rows: repeat(auto-fit, 209px);
+  gap: 1.6em;
+  padding: 2em 0 0 2em;
+}
+
+main .projects::before{
+  position: absolute;
+  top: .2em;
+  left: 2em;
+  content: "Your Projects";
+  color: black;
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+
+.projects .card{
+  border-left: 8px solid #18c4fe;
+  border-radius: 2% 0 0 2%;
+  background-color: whitesmoke;
+  color: black;
+  padding: 1.6em 1em;
+  display: grid;
+  align-content: center;
+  row-gap: .4em;
+}
+
+.projects .card h6{
+  font-size: 1.6rem;
+}
+
+.projects .card p{
+  color: #646464;
+  font-size: 1.4rem;
+  margin-bottom: 1.6em;
+}
+
+.projects .card .actions{
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 1em;
+}
+
+
+.projects svg{
+  fill: #333333;
 }
