@@ -25,10 +25,6 @@ body{
   color: whitesmoke;
 }
 
-body > *{
-  border: 1px solid red;
-}
-
 svg{
   fill: whitesmoke;
   height: 24px;
@@ -95,7 +91,7 @@ a{
 
 .header{
   color: black;
-  display: grid;
+  display: grid;  
 }
 
 
@@ -177,8 +173,6 @@ column-gap: 1.6em;
   column-gap: 1.6em;  
 }
 
-
-
 .call-to-action a{
   display: flex;
   justify-content: center;
@@ -192,24 +186,20 @@ column-gap: 1.6em;
   font-weight: bold;
 }
 
-
-
-/* Use purple color for left side card border color */
-
-
-main{
+main{ 
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 2fr;
   background-color: #e2e8f0;
   padding-top: 1.6em;
   padding-bottom: 5em;
+  box-shadow: inset rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 
 main .projects{
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 357px);
-  grid-template-rows: repeat(auto-fit, 209px);
   gap: 1.6em;
   padding: 2em 0 0 2em;
 }
@@ -226,14 +216,17 @@ main .projects::before{
 
 .projects .card{
   border-left: 8px solid #18c4fe;
-  border-radius: 2% 0 0 2%;
+  border-radius: 2% 2% 2% 2%;
   background-color: whitesmoke;
   color: black;
   padding: 1.6em 1em;
   display: grid;
   align-content: center;
   row-gap: .4em;
+  box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
+
 
 .projects .card h6{
   font-size: 1.6rem;
@@ -255,3 +248,96 @@ main .projects::before{
 .projects svg{
   fill: #333333;
 }
+
+
+.featured{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3em;
+}
+
+.featured .announcements{
+  position: relative;
+  background-color: whitesmoke;
+  padding:1em 1.6em;
+  margin: 2em 2em 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.announcements::before{
+  position: absolute;
+  top: -1.6em;
+  left: 0;
+  content: "Announcements";
+  color: black;
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+
+.announcements .announcement{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80px;
+}
+
+.announcement:nth-child(1), .announcement:nth-child(2){
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.announcement h4{
+  font-size: 1.4rem;
+}
+
+.announcement p{
+  font-size: 1rem;
+  color: #646464;
+}
+
+.featured .trending{
+  position: relative;
+  background-color: whitesmoke;
+  padding:1em 1.6em;
+  margin: 1em 2em 0 2em;
+  box-shadow:  rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: grid;
+  row-gap: 2em;
+}
+
+.trending::before{
+  position: absolute;
+  top: -1.6em;
+  left: 0;
+  content: "Trending";
+  color: black;
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+
+.topics{
+  display: flex;
+  column-gap: 1em;
+  align-items: center;
+}
+
+.topics img{
+  height: 45px;
+  width: 45px;
+  object-fit:contain;
+}
+
+.topics h4{
+  font-size: 1.4rem;
+}
+
+.topics p{
+  font-size: 1.2rem;
+  color: #646464;
+}
+
+
